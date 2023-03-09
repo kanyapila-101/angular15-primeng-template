@@ -88,7 +88,7 @@ import {InplaceModule} from 'primeng/inplace';
 import {ProgressSpinnerModule} from 'primeng/progressspinner';
 import {AutoFocusModule} from 'primeng/autofocus';
 import {AnimateModule} from 'primeng/animate';
-// import {EditorModule} from 'primeng/editor';
+import {EditorModule} from 'primeng/editor';
 import {KeyFilterModule} from 'primeng/keyfilter';
 import {TreeSelectModule} from 'primeng/treeselect';
 import {SpeedDialModule} from 'primeng/speeddial';
@@ -183,7 +183,7 @@ import {SpeedDialModule} from 'primeng/speeddial';
         ProgressSpinnerModule,
         AutoFocusModule,
         AnimateModule,
-        // EditorModule,
+        EditorModule,
         KeyFilterModule,
         TreeSelectModule,
         SpeedDialModule,
