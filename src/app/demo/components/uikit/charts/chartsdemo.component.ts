@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { LayoutService } from 'src/app/layout/service/app.layout.service';
+import { LayoutService } from 'src/app/core/layout/service/app.layout.service';
 
 @Component({
     templateUrl: './chartsdemo.component.html'
@@ -44,7 +44,7 @@ export class ChartsDemoComponent implements OnInit, OnDestroy {
         const textColor = documentStyle.getPropertyValue('--text-color');
         const textColorSecondary = documentStyle.getPropertyValue('--text-color-secondary');
         const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
-        
+
         this.barData = {
             labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
             datasets: [
@@ -265,5 +265,5 @@ export class ChartsDemoComponent implements OnInit, OnDestroy {
             this.subscription.unsubscribe();
         }
     }
-    
+
 }

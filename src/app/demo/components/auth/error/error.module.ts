@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ErrorRoutingModule } from './error-routing.module';
 import { ErrorComponent } from './error.component';
-import { ButtonModule } from 'primeng/button';
+import { PrimeNgUIComponentModule } from 'src/app/shared/modules/primeng-ui-component.module';
 
 @NgModule({
     imports: [
         CommonModule,
         ErrorRoutingModule,
-        ButtonModule
+        PrimeNgUIComponentModule
     ],
     declarations: [ErrorComponent]
 })

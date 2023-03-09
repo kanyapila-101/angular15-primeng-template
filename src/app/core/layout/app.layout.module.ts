@@ -3,20 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { InputTextModule } from 'primeng/inputtext';
-import { SidebarModule } from 'primeng/sidebar';
-import { BadgeModule } from 'primeng/badge';
-import { RadioButtonModule } from 'primeng/radiobutton';
-import { InputSwitchModule } from 'primeng/inputswitch';
-import { RippleModule } from 'primeng/ripple';
-import { AppMenuComponent } from './app.menu.component';
+import { AppMenuComponent } from './menu/app.menu.component';
 import { AppMenuitemComponent } from './app.menuitem.component';
 import { RouterModule } from '@angular/router';
-import { AppTopBarComponent } from './app.topbar.component';
-import { AppFooterComponent } from './app.footer.component';
+import { AppTopBarComponent } from './topbar/app.topbar.component';
 import { AppConfigModule } from './config/config.module';
-import { AppSidebarComponent } from "./app.sidebar.component";
+import { AppSidebarComponent } from "./sidebar/app.sidebar.component";
 import { AppLayoutComponent } from "./app.layout.component";
+import { AppFooterComponent } from './footer/app.footer.component';
+import { PrimeNgUIComponentModule } from 'src/app/shared/modules/primeng-ui-component.module';
 
 @NgModule({
     declarations: [
@@ -29,17 +24,11 @@ import { AppLayoutComponent } from "./app.layout.component";
     ],
     imports: [
         BrowserModule,
-        FormsModule,
         HttpClientModule,
         BrowserAnimationsModule,
-        InputTextModule,
-        SidebarModule,
-        BadgeModule,
-        RadioButtonModule,
-        InputSwitchModule,
-        RippleModule,
+        PrimeNgUIComponentModule,
         RouterModule,
-        AppConfigModule
+        AppConfigModule,
     ],
     exports: [AppLayoutComponent]
 })
