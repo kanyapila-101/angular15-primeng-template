@@ -14,7 +14,7 @@ import { ToggleButtonModule } from 'primeng/togglebutton';
 		ButtonModule,
 		RippleModule,
 		SplitButtonModule,
-		ToggleButtonModule,
+		ToggleButtonModule
 	],
 	declarations: [ButtonDemoComponent]
 })
